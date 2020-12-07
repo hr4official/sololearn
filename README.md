@@ -27,6 +27,16 @@ You need to change the code to skip the even numbers, so that the logic only app
 
 
 #solution4
+You are making a Celsius to Fahrenheit converter. 
+Write a function to take the Celsius value as an argument and return the corresponding Fahrenheit value.
+
+Sample Input
+36
+
+Sample Output 
+96.8
+
+
 #solution5
 #solution6
 #solution7
