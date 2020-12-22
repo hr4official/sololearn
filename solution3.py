@@ -1,4 +1,4 @@
-n = int(input())
+= int(input())
 
 for x in range(1, n,2):
     if x % 3 == 0 and x % 5 == 0:
@@ -8,4 +8,4 @@ for x in range(1, n,2):
     elif x % 5 == 0:
         print("Learn")
     else:
-        print(x)
+        print(x)  
