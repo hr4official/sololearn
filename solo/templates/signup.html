@@ -7,9 +7,18 @@
 </head>
 <body>
     <h1> Signup  Page </h1>
-    <form>
-        <h5>Name</h5>
-        <textarea></textarea>
-    </form>
+    <form action="/login">
+        <label for="name">First name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="surname">Last name:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+        <label for="Email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="contact">contact:</label>
+        <input type="text" id="contact" name="contact"><br><br>
+        <label for="image">image:</label>
+        <input type="file" id="image" name="image" accept="image/*"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
 </body>
 </html>
