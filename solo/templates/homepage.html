@@ -9,6 +9,12 @@
     <a href="signup">signup</a>    
     <a href="/login">login</a>    
     <h1>Homepage</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum sed vero quam maiores fuga non et unde, dolore necessitatibus aliquam ducimus exercitationem dolorem, ratione quibusdam omnis qui rerum. Impedit.
+
+    {% for users in users %}
+
+    <h1>{{users.name}}</h1>
+    <h1>{{users.surname}}</h1>
+
+    {% endfor %}
 </body>
 </html>

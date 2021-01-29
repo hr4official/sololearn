@@ -9,3 +9,7 @@ class User(models.Model):
     email = models.EmailField(max_length=200)
     contact = models.CharField(max_length=10)
     image = models.ImageField(max_length=10)
+    
+    @staticmethod
+    def get_all_user():
+        return User.objects.all()
