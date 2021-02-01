@@ -8,10 +8,9 @@ class User(models.Model):
     surname = models.CharField(max_length=20)
     email = models.EmailField(max_length=200)
     contact = models.CharField(max_length=10)
-    image = models.ImageField(max_length=10)
+    image = models.ImageField(upload_to= "images/")
     
     @staticmethod
     def get_all_user():
         return User.objects.all()
     
-    name = 
