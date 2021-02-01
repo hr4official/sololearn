@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
-</head>
-<body>
-    <h1> Signup  Page </h1>
-    <form action="/login">
-        <label for="name">First name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="surname">Last name:</label>
-        <input type="text" id="surname" name="surname"><br><br>
-        <label for="Email">Email:</label>
-        <input type="text" id="email" name="email"><br><br>
-        <label for="contact">contact:</label>
-        <input type="text" id="contact" name="contact"><br><br>
-        <label for="image">image:</label>
-        <input type="file" id="image" name="image" accept="image/*"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
-</body>
-</html>
+<div class="container">
+    <form method="POST">
+      <fieldset>
+        <legend>Form</legend>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Register</button>
+      </fieldset>
+    </form>
+</div>
