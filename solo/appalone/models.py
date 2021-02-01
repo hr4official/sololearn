@@ -13,3 +13,5 @@ class User(models.Model):
     @staticmethod
     def get_all_user():
         return User.objects.all()
+    
+    name = 

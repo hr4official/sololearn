@@ -1,10 +1,15 @@
 from django import forms
-from django.forms import fields
-from django.forms.models import model_to_dict
 from .models import User
 
 class UserForm(forms.ModelForm):
-    class meta:
+    """ name = forms.CharField(label='name',max_length=20)
+    surname = forms.CharField(label='name',max_length=20)
+    email = forms.EmailField(label='name',max_length=20)
+    contact = forms.CharField(label='name',max_length=20)
+    image = forms.ImageField(label='name',max_length=20)
+     """
+    
+    class Meta:
         model = User
         fields = ["name","surname","email","contact","image"]
         labels = {"name": "name","surname": "surname","email": "email","contact": "contact","image": "image",}

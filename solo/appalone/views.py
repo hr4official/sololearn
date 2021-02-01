@@ -7,7 +7,13 @@ def homepage(request):
     return render(request,"homepage.html",{'users' : users})
 
 def signup(request):
-    return render(request,"signup.html")
+    if request.method == "POST":
+        form = UserForm(request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = UserForm()
+    return render(request, 'signup.html', {'form': form})
 
 def login(request):
     return render(request,"login.html")
