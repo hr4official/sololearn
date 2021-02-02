@@ -18,13 +18,13 @@ def signup(request):
 def login(request):
     return render(request,"login.html")
 
-def userform(request):
+""" def userform(request):
     if request.method == "POST":
         form = UserForm(request.POST)
         if form.is_valid():
             form.save()
     else:
         form = UserForm()
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'login.html', {'form': form}) """
     
     
