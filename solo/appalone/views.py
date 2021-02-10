@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import User
 from .forms import UserForm
+from django.http import HttpResponse
 # Create your views here.
 def homepage(request):
     users = User.get_all_user()
@@ -11,6 +12,7 @@ def signup(request):
         form = UserForm(request.POST)
         if form.is_valid():
             form.save()
+            return HttpResponse("done")
     else:
         form = UserForm()
     return render(request, 'signup.html', {'form': form})
