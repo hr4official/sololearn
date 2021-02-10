@@ -55,3 +55,9 @@ S9
 A12
 #solution6
 #solution7
+
+
+
+
+
+Djnago website curd sample
