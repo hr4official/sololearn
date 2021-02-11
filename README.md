@@ -61,3 +61,7 @@ A12
 
 
 Djnago website curd sample
+
+
+Updating  forms and html forms 
+
