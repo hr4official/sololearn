@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1> create new account </h1>
+<form method="POST">
+    {% csrf token %}
+    <button>Register</button>
+</form>
+
+</form>
+{% endblock %}
